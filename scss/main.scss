@@ -1,0 +1,98 @@
+// Override variables here
+// You can add new ones or update existing ones:
+
+$blue: #72d0eb;// Update blue
+$pink: #ffb3b3; // Add pink
+$family-serif: "Proxima Nova", "Helvetica Neue", "Helvetica", sans-serif; // Add a serif family
+
+// Override generated variables here
+// For example, by default, the $danger color is $red and the font is sans-serif
+// You can change these values:
+
+$family-primary: $family-serif; // Use the new serif family
+
+@import "node_modules/bulma/bulma";
+@import "proxima-nova";
+
+body {
+  font-style: normal;
+  font-variant: normal;
+  font-size: 12pt;
+}
+
+h1 {
+  font-weight: bolder;
+  font-size: 24pt;
+  margin-top: 0pt;
+  margin-bottom: 6pt;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 18pt;
+  margin-top: 0pt;
+  margin-bottom: 6pt;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 14pt;
+  margin-top: 0pt;
+  margin-bottom: 6pt;
+}
+
+.dot {
+  color: white;
+  background-color: grey;
+  display: inline-block;
+  border-radius: 60px;
+  padding: 5px;
+  font-size: 10pt !important;
+  box-shadow: 0px 0px 2px #888;
+  margin-left: 5px;
+}
+
+.header {
+  padding-top: 15px !important;
+  text-align: left;
+  background-color: $grey;
+  color: white !important;
+}
+
+.header a {
+  text-transform: uppercase;
+  font-size: 12pt;
+  letter-spacing: 0.1em;
+  color: white;
+  margin-right: 15px;
+}
+
+.header .buttons a {
+  border: 1px solid #fff !important;
+  padding: 8px;
+}
+
+.header .buttons .inverted, .header .buttons a:hover {
+  color: black;
+  background-color: white;
+}
+
+.header h1, .header h2 {
+  color: white;
+  text-transform: uppercase;
+}
+.header h1 {
+  font-size: 32pt;
+  letter-spacing: 0.16em;
+  margin-bottom: 0;
+  line-height: 24pt;
+}
+.header h2 {
+  font-size: 18pt;
+  letter-spacing: 0.1em;
+  margin-bottom: 12pt;
+}
+
+.header .buttons {
+  margin-top: 20px;
+}
