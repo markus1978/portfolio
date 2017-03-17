@@ -14,6 +14,9 @@ $family-primary: $family-serif; // Use the new serif family
 @import "node_modules/bulma/bulma";
 @import "proxima-nova";
 
+$breakpoint-phone: 512px;
+$breakpoint-pad: 786px;
+
 body {
   font-style: normal;
   font-variant: normal;
@@ -53,23 +56,104 @@ h3 {
 }
 
 .header {
-  padding-top: 15px !important;
+  padding-top: 0px !important;
   text-align: left;
-  background-color: $grey;
-  color: white !important;
+  color: white;
+  background:
+     linear-gradient(
+       rgba(0, 0, 0, 0.5),
+       rgba(0, 0, 0, 0.5)
+     ),
+     url(../img/header-background.jpg)
+     top center
+     fixed
+     $grey;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  @media (max-width: $breakpoint-pad) {
+    padding-bottom: 30px;
+  }
+  @media (max-width: $breakpoint-phone) {
+    padding-bottom: 20px;
+  }
+  @media (min-width: $breakpoint-pad) {
+    padding-bottom: 48px;
+  }
 }
 
-.header a {
-  text-transform: uppercase;
-  font-size: 12pt;
-  letter-spacing: 0.1em;
+.nav .fa {
+  font-size: 14pt;
+  vertical-align: middle;
+  display: flex !important;
+}
+
+.nav {
+  background: inherit;
+  @media (max-width: $breakpoint-pad) {
+    margin-bottom: 18px;
+  }
+  @media (max-width: $breakpoint-phone) {
+    margin-bottom: 12px;
+  }
+  @media (min-width: $breakpoint-pad) {
+    margin-bottom: 30px;
+  }
+}
+
+.nav-left .nav-item {
+  padding: 0.5rem 0.75rem 0.5rem 0;
+}
+
+.nav-right .nav-item {
+  padding: 0.5rem 0 0.5rem 0.75rem;
+}
+
+#nav-toggle-state {
+  display: none;
+}
+
+.nav-left a.nav-item:not(:hover), .header a:not(.nav-item) {
   color: white;
-  margin-right: 15px;
+}
+
+.nav-toggle:not(:hover) span {
+  background-color: white;
+}
+
+.nav-toggle:hover {
+  background: inherit;
+}
+
+#nav-toggle-state:not(:checked) ~ .nav-menu a.nav-item:not(:hover) {
+  color: white;
+}
+
+#nav-toggle-state:checked ~ .nav-menu {
+  display: block;
+  color: black;
+}
+
+.header a:not(.fa) {
+  text-transform: uppercase;
+  @media (max-width: $breakpoint-pad) {
+    font-size: 10pt !important;
+    letter-spacing: 0.08em;
+  }
+  @media (min-width: $breakpoint-pad) {
+    font-size: 12pt;
+    letter-spacing: 0.1em;
+  }
+  margin-right: 8px;
 }
 
 .header .buttons a {
   border: 1px solid #fff !important;
-  padding: 8px;
+  @media (max-width: $breakpoint-pad) {
+    padding: 6px;
+  }
+  @media (min-width: $breakpoint-pad) {
+    padding: 8px;
+  }
 }
 
 .header .buttons .inverted, .header .buttons a:hover {
@@ -81,15 +165,38 @@ h3 {
   color: white;
   text-transform: uppercase;
 }
+
 .header h1 {
-  font-size: 32pt;
-  letter-spacing: 0.16em;
+  @media (max-width: $breakpoint-pad) {
+    font-size: 24pt !important;
+    letter-spacing: 0.1em;
+  }
+  @media (max-width: $breakpoint-phone) {
+    font-size: 18pt !important;
+    letter-spacing: 0.08em;
+  }
+  @media (min-width: $breakpoint-pad) {
+    font-size: 32pt;
+    letter-spacing: 0.16em;
+  }
+
   margin-bottom: 0;
   line-height: 24pt;
 }
+
 .header h2 {
-  font-size: 18pt;
-  letter-spacing: 0.1em;
+  @media (max-width: $breakpoint-pad) {
+    font-size: 13pt !important;
+    letter-spacing: 0.06em;
+  }
+  @media (max-width: $breakpoint-phone) {
+    font-size: 10pt !important;
+    letter-spacing: 0.04em;
+  }
+  @media (min-width: $breakpoint-pad) {
+    font-size: 18pt;
+    letter-spacing: 0.1em;
+  }
   margin-bottom: 12pt;
 }
 
