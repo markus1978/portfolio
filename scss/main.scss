@@ -1,8 +1,7 @@
 // Override variables here
 // You can add new ones or update existing ones:
 
-$blue: #72d0eb;// Update blue
-$pink: #ffb3b3; // Add pink
+$highlight: #ff0000;
 $family-serif: "Proxima Nova", "Helvetica Neue", "Helvetica", sans-serif; // Add a serif family
 
 // Override generated variables here
@@ -16,6 +15,10 @@ $family-primary: $family-serif; // Use the new serif family
 
 $breakpoint-phone: 512px;
 $breakpoint-pad: 786px;
+
+a {
+  color: $highlight;
+}
 
 body {
   font-style: normal;
@@ -202,4 +205,21 @@ h3 {
 
 .header .buttons {
   margin-top: 20px;
+}
+
+.figure {
+  text-align: center;
+}
+
+.uses {
+  font-family: monospace;
+}
+
+.uses span {
+  color: $highlight;
+  font-weight: bold;
+}
+
+p {
+  margin-bottom: 6px;
 }

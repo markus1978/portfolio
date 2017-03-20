@@ -15,9 +15,40 @@
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
+
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var uses = document.querySelectorAll(".uses");
+      for (var i = 0; i < uses.length; i++) {
+        var after = document.createElement('span');
+        after.innerHTML = ']';
+        var before = document.createElement('span');
+        before.innerHTML = '[';
+        uses[i].insertBefore(before, uses[i].childNodes[0]);
+        uses[i].appendChild(after);
+      }
+    });
+  </script>
   <section class="section header">
     <nav class="nav">
       <div class="nav-left">
@@ -62,22 +93,24 @@
         <div class="column">
           <h3>
             twiamo.com
-            <a class="dot fa fa-link"></a>
+            <a class="dot fa fa-link" href="https://twiamo.com" title="Try Twiamo"></a>
           </h3>
           <p>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
-            Lorem ipsum dolor sit amet.
+            Twiamo is a friendship management app for Twitter. It uses metrics
+            and keywords that allow users to quickly assess the value of other
+            Twitter users.
           </p>
           <p>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
-            Lorem ipsum dolor sit amet.
+            Twiamo is build as a <a href="https://developers.google.com/web/progressive-web-apps/"
+            title="Progressive web app definition" alt="new">progressive web-app</a>; a
+            mobile-first application that feels and behaves like a native mobile
+            app, but does not require installation or updates.
           </p>
+          <p class="figure">
+            <img width="85%" src="img/twiamo.jpg">
+          </p>
+          <p class="uses">Java, GWT, App Engine, Cloud Storage, Javascript,
+            Web Components, Polymer, Twitter API, REST</p>
         </div>
         <div class="column">
           <h3>
@@ -87,27 +120,52 @@
             <a class="dot fa fa-slideshare"></a>
           </h3>
           <p>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
-            Lorem ipsum dolor sit amet.
+            XRAW is a programming framework that allows to use any existing
+            REST API within a JVM environment in a type-safe manner. It uses
+            <a href="https://eclipse.org/xtend/documentation/204_activeannotations.html"
+            title="Active annotations explained" target="new">active annotations</a>
+            to alter the semantics of Java classes and fields to represent
+            remote resources as if they were local data.
           </p>
           <p>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
-            Lorem ipsum dolor sit amet.
+            Twiamo comes with small excerpts of the APIs for the larger social networks
+            Twitter, Facebook, YouTube, and Tumblr. It can easily be extended
+            by defining types for requests and resources of more existing APIs or to
+            create type-safe client libraries for APIs build from scratch.
           </p>
+          <p class="figure">
+            <img max-width="413px" src="img/xraw.png">
+          </p>
+          <p>
+            XRAW is compatible with GWT and can be used for web app clients,
+            Android, or regular desktop apps. It is <a href="https://github.com/markus1978/xraw"
+            title="XRAW on GitHub">open source</a> and distributed
+            as a maven module.
+          </p>
+          <p class="uses">Java, Xtend, JSON, REST, Twitter, Facebook, Youtube,
+            Tumblr, Maven</p>
         </div>
         <div class="column">
           <h3>
             Apps &amp; Games
-            <a class="dot fa fa-github"></a>
-            <a class="dot fa fa-file-o"></a>
-            <a class="dot fa fa-slideshare"></a>
           </h3>
+          <div class="figure" style="position: relative;">
+            <img width="65%" src="img/apps.jpg">
+            <a class="dot fa fa-android" href="https://play.google.com/store/apps/details?id=de.wendytech.rtfrog" title="Rope the Frog" style="position: absolute; top: 10%; left:10%;"></a>
+            <a class="dot fa fa-android" href="https://play.google.com/store/apps/details?id=de.wendytech.grm" title="Gravity Racing Madness" style="position: absolute; top: 27%; right:10%;"></a>
+            <div style="position: absolute; bottom: 32%; left:3%;">
+              <a class="dot fa fa-apple" href="https://itunes.apple.com/us/app/cube-orbit/id1195175774" title="Cube Orbit"></a>
+              <a class="dot fa fa-android" href="https://play.google.com/store/apps/details?id=de.scheidgen.cubeorbit" title="Cube Orbit"></a>
+            </div>
+            <a class="dot fa fa-android" href="https://play.google.com/store/apps/details?id=de.wendytech.rocketscientistng" title="Rocket Scientist" style="position: absolute; bottom: 26%; right:13%;"></a>
+          </div>
+          <p>Smartphone apps and app stores are probably one of the most
+            distruptive things in the last decade that any programmer has to
+            try build for. I experimented with a variety of platforms and
+            technologies. I developed and published apps and games for both
+            iOS and Android.
+          </p>
+          <p class="uses">LibGDX, Unity, Java, C#, Android, iOS</p>
         </div>
       </div>
       <h2>Research Projects</h2>
