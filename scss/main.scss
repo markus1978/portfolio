@@ -1,7 +1,7 @@
 // Override variables here
 // You can add new ones or update existing ones:
 
-$highlight: #ff0000;
+$highlight: #CC0000;
 $family-serif: "Proxima Nova", "Helvetica Neue", "Helvetica", sans-serif; // Add a serif family
 
 // Override generated variables here
@@ -222,4 +222,13 @@ h3 {
 
 p {
   margin-bottom: 6px;
+}
+
+p .fa {
+  line-height: 1.7;
+}
+
+p .fa-file {
+  font-size: 13px;
+  line-height: 2;
 }
