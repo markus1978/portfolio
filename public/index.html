@@ -48,6 +48,22 @@
         uses[i].appendChild(after);
       }
     });
+
+    function toggle_visibility(id, toggle_id) {
+      var e = document.getElementById(id);
+      if(e.style.display == 'block') {
+         e.style.display = 'none';
+      } else {
+         e.style.display = 'block';
+      }
+      var te = document.getElementById(toggle_id);
+      if (te.className.indexOf('fa-caret-down') > -1) {
+        te.className = "toggle fa fa-caret-right";
+      } else {
+        te.className = "toggle fa fa-caret-down";
+      }
+    }
+
   </script>
   <section class="section header">
     <nav class="nav">
@@ -196,6 +212,7 @@
             et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
             Lorem ipsum dolor sit amet.
           </p>
+          <p class="uses">Eclipse, EMF, Reverse Engineering, Java, Metrics, Data Mining, Statistics, MongoDB, NoSQL, Git</p>
         </div>
         <div class="column">
           <h3>
@@ -222,6 +239,7 @@
             in an <a href="http://read.cs.ucla.edu/click/click" title="MIT Click framework">MIT Click</a>-driven
             network in a singlular visual model; allows to manage, persist, and analyse this data.
           </p>
+          <p class="uses">Eclipse, EMF, XML, Statistics, MongoDB, NoSQL, WIFI, Networks, Click</p>
         </div>
         <div class="column">
           <h3>
@@ -246,17 +264,106 @@
           <div class="youtube-container">
             <iframe class="video" src="https://www.youtube.com/embed/5MZT2a3--Ko" frameborder="0" allowfullscreen></iframe>
           </div>
+          <p class="uses">Eclipse, EMF, Xtext, GMF, Domain Modeling</p>
         </div>
       </div>
       <div>
-        <h3>Publications</h3>
+        <h3><a onclick="toggle_visibility('pubs', 'pubs-toggle');" id="pubs-toggle" class="toggle fa fa-caret-right"></a>Publications</h3>
+        <div id="pubs" class="pubs">
+          <div class="columns">
+            <div class="column">
+<ul>
+<li><span class="label" style="background-color: black;">conference</span> <a href="http://www.markus-scheidgen.de/wp-content/uploads/2017/03/SrcRepo-MODELSWARD.pdf">Creating and Analyzing Source Code Repository Models – A Model-based Approach to Mining Software Repositories</a>; Markus Scheidgen, Joachim Fischer, Martin Schmidt; Proceedings of the 5th International Conference on Model-Driven Engineering and Software Development, <a href="http://www.modelsward.org/?y=2017" target="_blank">MODELSWARD 2017</a>, Porto, Portugal, Feb 19-21, 2017 (<a title="Model-Based Mining of Source Code Repositories" href="http://www.markus-scheidgen.de/2017/03/creating-and-analyzing-source-code-repository-models-a-model-based-approach-to-mining-software-repositories/">BibTex/details</a>)</li>
+<li><span class="label" style="background-color: black;">conference</span> <a href="http://www.markus-scheidgen.de/wp-content/uploads/2016/12/ScheidgenEfftingeMarticke_cameraready.pdf">Metamodeling vs Metaprogramming: A Case Study on Developing Client Libraries for REST APIs</a>; Markus Scheidgen, Sven Efftinge, Frederik Marticke; 12th European Conference, <a href="http://link.springer.com/book/10.1007/978-3-319-42061-5" target="_blank">ECMFA 2016</a>, Held as Part of STAF 2016, Vienna, Austria, July 6-7, 2016; Springer LNCS (<a title="Model-Based Mining of Source Code Repositories" href="http://www.markus-scheidgen.de/2016/12/metamodeling-vs-metaprogramming-a-case-study-on-developing-client-libraries-for-rest-apis/">BibTex/details</a>)</li>
+<li><span class="label">workshop</span> <a href="http://www.markus-scheidgen.de/wp-content/uploads/2016/12/ScheidgenCompression_cameraReady.pdf">Evaluation of Model Comparison for Delta-Compression in Model Persistence</a>; Markus Scheidgen; Workshop paper at <a href="http://www.big-mde.eu/" target="_blank">BigMDE 2016</a> (at <a href="http://staf2016.conf.tuwien.ac.at/" target="_blank">STAF 2016</a>),Vienna, Austria, July 6-7, 2016; CEUR (<a title="Generation of Random Software Models for Benchmarks" href="http://www.markus-scheidgen.de/2016/12/evaluation-of-model-comparison-for-delta-compression-in-model-persistence/">BibTex/details</a>)</li>
+<li><span class="label" style="background-color: black;">conference</span> Exchanging the Target-Language in Existing, Non-Metamodel-Based Compilers; Dorian Weber, Markus Scheidgen, Joachim Fischer; 9th International Conference, <a href="http://www.springer.com/de/book/9783319466125" target="_blank">SAM 2016</a>, Saint-Malo, France, October 3-4, 2016. Proceedings; Springer LNCS (<a title="Model-Based Mining of Source Code Repositories" href="http://dblp.uni-trier.de/rec/bibtex/conf/sam/WeberSF16" target="_blank">BibTex/details</a>)</li>
+<li><span class="label" style="background-color: magenta;">proceedings</span> <a href="http://link.springer.com/book/10.1007%2F978-3-319-24912-4">SDL 2015: Model-Driven Engineering for Smart Cities</a>; Joachim Fischer, Ina Schieferdecker, Holger Schlingloff, Markus Scheidgen (eds); Berlin, Germany, October 12th-14th, 2015, Spring LNCS;</li>
+<li><span class="label">workshop</span> <a href="http://ceur-ws.org/Vol-1406/paper1.pdf">Random Generation of Large Software Models for Benchmarking</a>; Markus Scheidgen; Workshop paper at <a href="http://www.big-mde.eu/">BigMDE 2015</a> (at <a href="http://www.disim.univaq.it/staf2015/">STAF 2015</a>), L&#8217;Aquia, Italy, July 23th, 2015; CEUR (<a title="Generation of Random Software Models for Benchmarks" href="http://www.markus-scheidgen.de/2015/08/generation-of-random-software-models-for-benchmarks/">BibTex/details</a>)</li>
+<li><span class="label" style="background-color: black;">conference</span> <a title="Model-Based Mining of Source Code Repositories" href="http://www.markus-scheidgen.de/wp-content/uploads/2014/09/ScheidgenFischer_cameraReady.pdf">Model-based Mining of Software Repositories</a>; Markus Scheidgen and Joachim Fischer; <a href="http://sdl-forum.org/Events/SAM2014/">8th Systems and Modeling Conference,</a> Valencia, Spain, September 29th, 2014; Springer LNCS (<a title="Model-Based Mining of Source Code Repositories" href="http://www.markus-scheidgen.de/2014/09/model-based-mining-of-source-code-repositories/">BibTex/details</a>)</li>
+<li><span class="label">workshop</span> <a href="http://www.markus-scheidgen.de/wp-content/uploads/2013/06/BigMDE2013-Scheidgen-final.pdf">Reference Representation Techniques for Large Models</a>; Markus Scheidgen; Workshop paper at <a href="http://big-mde.eu">BigMDE 2013</a> (at <a href="http://stafconferences.info/">STAF 2013</a>), Budapest, Hungary, June 17th, 2013; ACM Digital Library (<a title="Reference Representation Techniques for Large Models" href="http://www.markus-scheidgen.de/2014/06/reference-representation-techniques-for-large-models/">BibTex/details</a>)</li>
+<li><span class="label" style="background-color: black;">conference</span> <a href="http://www.markus-scheidgen.de/wp-content/uploads/2012/01/SDLForum2013-final.pdf">Refactorings in Language Development with Asymmetric Bidirectional Model Transformations</a><em>; </em>Martin Schmidt, Arif Wider, Markus Scheidgen, Sebastian von Klinski, Joachim Fischer; <a href="http://users.encs.concordia.ca/~magic/sdl2013/index.php">16th International System Design Languages Forum Model-driven dependability engineering</a>, Montreal, Canada, June 26-28 2013; <a href="http://link.springer.com/chapter/10.1007/978-3-642-38911-5_13">Spring LNCS</a> (<a title="Refactorings in Language Development with Asymmetric Bidirectional Model Transformations" href="http://www.markus-scheidgen.de/2013/06/refactorings-in-language-development-with-asymmetric-bidirectional-model-transformations/">BibTeX/details</a>)</li>
+<li><span class="label">workshop</span> <a href="http://link.springer.com/chapter/10.1007%2F978-3-642-36757-1_8">From Earthquake Detection to Traffic Surveillance &#8211; About Information and Communication Infrastructures for Smart Cities</a>; Joachim Fischer, Jens-Peter Redlich, Björn Scheuermann, Jochen H. Schiller, Mesut Günes, Kai Nagel, Peter Wagner, Markus Scheidgen, Anatolij Zubow, Ingmar Eveslage, Robert Sombrutzki,Felix Juraschek; Keynote Paper in System Analysis and Modeling: Theory and Practice &#8211; 7th International Workshop, SAM 2012, Innsbruck, Austria, October 1-2, 2012. Revised Selected Papers; <a href="http://link.springer.com/chapter/10.1007%2F978-3-642-36757-1_8">LNCS Springer</a>; 2013 (<a title="From Earthquake Detection to Traffic Surveillance – About Information and Communication Infrastructures for Smart Cities" href="http://www.markus-scheidgen.de/2013/03/from-earthquake-detection-to-traffic-surveillance-about-information-and-communication-infrastructures-for-smart-cities/">BibTex/details</a>)</li>
+<li><span class="label" style="background-color: black;">conference</span> <a href="http://www.markus-scheidgen.de/wp-content/uploads/2012/07/Automated-and-Transparent-Model-Fragmentation-for-Persisting-Large-Models.pdf">Automated and Transparent Model Fragmentation for Persisting Large Models</a>; M. Scheidgen, A. Zubow, J. Fischer, T. H. Kolbe;  ACM/IEEE 15th International Conference on Model Driven Engineering Languages &amp; Systems (MODELS); Innsbruck; 2012; LNCS Springer (<a title="Automated and Transparent Model Fragmentation for Persisting Large Models" href="http://www.markus-scheidgen.de/2013/03/automated-and-transparent-model-fragmentation-for-persisting-large-models/">BibTex/details</a>)</li>
+<li><span class="label">workshop</span> <a href="http://www.markus-scheidgen.de/wp-content/uploads/2012/10/ScheidgenMOTPW2012CameraReadyPreWS.pdf">EMF Modeling in Traffic Surveillance Experiments</a>; M. Scheidgen, A. Zubow; International Workshop on Modeling of the Real World (at MODELS 2012); <a href="http://dl.acm.org/citation.cfm?id=2491622&amp;CFID=227472916&amp;CFTOKEN=91429867">ACM Digital Library </a>2012 (<a title="EMF Modeling in Traffic Surveillance Experiments" href="http://www.markus-scheidgen.de/2013/06/emf-modeling-in-traffic-surveillance-experiments/">BibTex/details</a>)</li>
+<li><span class="label">workshop</span> <a href="http://www.markus-scheidgen.de/wp-content/uploads/2012/10/ScheidgenMDHPCL2012CameraPreWS.pdf">Map/Reduce on EMF-Models</a>; M.Scheidgen, A.Zubow; International Workshop on Model-Driven Engineering for High Performance and Cloud computing (at MODELS 2012); <a href="http://dl.acm.org/citation.cfm?id=2446231&amp;CFID=227472916&amp;CFTOKEN=91429867">ACM Digital Library</a> 2012 (<a title="Map/Reduce on EMF Models" href="http://www.markus-scheidgen.de/2013/03/mapreduce-on-emf-models/">BibTex/details</a>)</li>
+<li><span class="label" style="background-color: black;">conference</span> <a href="http://www.markus-scheidgen.de/wp-content/uploads/2012/07/HWL-A-High-Performance.pdf">HWL – A High Performance Wireless Sensor Research Network</a>; M. Scheidgen, A. Zubow, R. Sombrutzki; IEEE International Conference on Networked Sensing Systems (INSS); Antwerp; 2012; <a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?tp=&amp;arnumber=6240552&amp;contentType=Conference+Publications&amp;searchWithin%3Dp_Authors%3A.QT.Scheidgen%2C+Markus.QT.%26searchWithin%3Dp_Author_Ids%3A38263771100">IEEE</a> (<a title="HWL — A high performance wireless sensor research network" href="http://www.markus-scheidgen.de/2013/03/hwl-a-high-performance-wireless-sensor-research-network/">BibTex/details</a>)</li>
+<li><span class="label" style="background-color: black;">conference</span> <a title="Type-Safe Model Transformations as Internal DSLs in Scala" href="http://metrikforge.informatik.hu-berlin.de/attachments/download/193/george_wider_scheidgen_ICMT_2012.pdf">Type-Safe Model Transformation Languages as Internal DSLs in Scala</a>; George, L., Wider, A., Scheidgen, M.; Proceedings of the 5th International Conference on Model Transformation (ICMT&#8217;12), Prague, 2012, LNCS Vol. 7307, <a href="http://link.springer.com/chapter/10.1007/978-3-642-30476-7_11">LNCS Springer</a> 2012 (<a title="Type-Safe Model Transformation Languages as Internal DSLs in Scala" href="http://www.markus-scheidgen.de/?p=380">BibTex/details</a>)</li>
+<li><span class="label" style="background-color: black;">conference</span> <a title="ClickWatch - An Experimentation Framework for Communication Network Test-beds" href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?tp=&amp;arnumber=6214377">ClickWatch &#8211; An Experimentation Framework for Communication Network Test-beds</a>; M. Scheidgen, A. Zubow, R. Sombrutzki; IEEE Wireless Communications and Networking Conference (WCNC); Paris; 2012; <a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?tp=&amp;arnumber=6214377">IEEE</a> (<a title="ClickWatch – An Experimentation Framework for Communication Network Test-beds" href="http://www.markus-scheidgen.de/?p=372">BibTex/details</a>)</li>
+<li><span class="label" style="background-color: black;">conference</span> <a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?tp=&amp;arnumber=6402802&amp;contentType=Conference+Publications&amp;sortType%3Dasc_p_Sequence%26filter%3DAND%28p_IS_Number%3A6402798%29%26rowsPerPage%3D75">MAC Diversity in IEEE 802.11n MIMO Networks</a>; Anatolij Zubow, Robert Sombrutzki, Markus Scheidgen; Proceedings of the IFIP Wireless Days Conference 2012,n, Ireland, November 21-23, 2012; <a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?tp=&amp;arnumber=6402802&amp;contentType=Conference+Publications&amp;sortType%3Dasc_p_Sequence%26filter%3DAND%28p_IS_Number%3A6402798%29%26rowsPerPage%3D75">IEEE</a> (<a title="MAC Diversity in IEEE 802.11n MIMO Networks" href="http://www.markus-scheidgen.de/2013/03/mac-diversity-in-ieee-802-11n-mimo-networks/">BibTex/details</a>)</li>
+<li><span class="label" style="background-color: black;">conference</span> <a title="Archive" href="http://arxiv.org/abs/1203.2041">Towards MAC/Anycast Diversity in IEEE 802.11n MIMO Networks</a>; Anatolij Zubow, Robert Sombrutzki, Markus Scheidgen; CoRR abs/1203.2041: 2012, <a href="http://arxiv.org/abs/1203.2041">arXiv.org</a> (<a title="Towards MAC/Anycast Diversity in IEEE 802.11n MIMO Networks" href="http://www.markus-scheidgen.de/?p=474">BibTex/details</a>).</li>
+<li><span class="label">workshop</span> <a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?tp=&amp;arnumber=6424078&amp;contentType=Conference+Publications&amp;sortType%3Dasc_p_Sequence%26filter%3DAND%28p_IS_Number%3A6424021%29%26rowsPerPage%3D75">Towards Smart Berlin &#8211; an Experimental Facility for Heterogeneous Smart City Infrastructures</a>; Juraschek, F., A. Zubow, O. Hahm, M. Scheidgen, B. Blywis, R. Sombrutzki, M. Günes, and J. Fischer; Proceedings of 1st Workshop on GlObal Trends in Smart Cities 2012 (goSMART), October, <a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?tp=&amp;arnumber=6424078&amp;contentType=Conference+Publications&amp;sortType%3Dasc_p_Sequence%26filter%3DAND%28p_IS_Number%3A6424021%29%26rowsPerPage%3D75">IEEE</a> 2012 (<a title="Towards Smart Berlin – An Experimental Facility for Heterogeneous Smart City Infrastructures" href="http://www.markus-scheidgen.de/2013/03/towards-smart-berlin-an-experimental-facility-for-heterogeneous-smart-city-infrastructures/">BibTex/details</a>).</li>
+<li><span class="label" style="background-color: black;">conference</span> <a href="http://www2.informatik.hu-berlin.de/%7Escheidge/downloads/ECMDA08.pdf">Combining Graphical and Textual Editing</a>; European Conference on Model Driven Architecture: Foundations and Applications (ECMDA); Berlin 2008; Springer</li>
+</ul></div><div class="column"><ul>
+<li><span class="label" style="background-color: black;">conference</span> <a href="http://www2.informatik.hu-berlin.de/%7Escheidge/downloads/Modellierung08.pdf">Integrating Content Assist into Textual Modelling Editors</a>; Modellierung 2008 Berlin; LNI Bonn</li>
+<li><span class="label" style="background-color: magenta;">proceedings</span> <a href="http://ceur-ws.org/Vol-324/">Domain Specific Modeling Languages (DSML)</a>; Workshop at Modellierung 2008 Berlin; <a href="http://ceur-ws.org/">CEUR Workshop Proceedings</a></li>
+<li><span class="label" style="background-color: black;">conference</span> <a href="http://www2.informatik.hu-berlin.de/%7Escheidge/downloads/SDL08.pdf">Adopting Meta-modelling for ITU-T Languages: Language Tool Prototypes as a by-Product of Language Specications</a>; SDL Forum Society Event, ITU, Geneva 2008</li>
+<li><span class="label" style="background-color: blue;">poster</span> <a href="http://www2.informatik.hu-berlin.de/%7Escheidge/downloads/poster-ale.pdf">Frameworks to Create Language Definitions and Tools on Top of the Eclipse Modeling Project</a>; Hajo Eichler, Daniel A. Sadilek, Markus Scheidgen, Michael Soden, Guido Wachsmuth, Stephan Weißleder; poster, Eclipse Summit 2008</li>
+<li><span class="label" style="background-color: black;">conference</span> <a href="http://www2.informatik.hu-berlin.de/%7Escheidge/downloads/ECMDA07.pdf">Human Comprehesible and Machine Processable Specifications of Operational Semantics</a>; European Conference on Model Driven Architecture: Foundations and Applications (ECMDA); Markus Scheidgen, Joachim Fischer; Haifa, 2007; Springer</li>
+<li><span class="label" style="background-color: black;">conference</span> <a href="http://www2.informatik.hu-berlin.de/%7Escheidge/downloads/SDL07.pdf">A Modelbased Standard for SDL</a>; Andreas Prinz, Markus Scheidgen, and Merete Skelton Tveit; In 12th SDL Forum, Paris 2007; Springer</li>
+<li><span class="label">workshop</span> C-Sharp 3.0 makes OCL Redundant; D.H. Akehurst, W.G. Howells, M. Scheidgen, and K.D. McDonald-Maier; In Modelling Systems with OCL, part of 10th International Conference on Model Driven Engineering Languages and Systems (MODELS/UML), 2007</li>
+<li><span class="label">workshop</span> A Semantic Meta-Modelling Framework with Simulation and Test Integration; ECMDA Workshop on Integration of Model Driven Development and Model Driven Testing; Hajo Eichler, Michael Soden, and Markus Scheidgen; Bilbao 2006; Frauenhofer</li>
+<li><span class="label" style="background-color: blue;">poster</span> <a href="http://www2.informatik.hu-berlin.de/%7Escheidge/downloads/poster-pattern.pdf">Pattern Based Composition of Languages</a>; poster, MODELS, Genoa 2006</li>
+<li><span class="label">workshop</span> <a href="http://www2.informatik.hu-berlin.de/%7Escheidge/downloads/SAM06.pdf">Implementing the eODL graphical representation</a>; 5th Workshop on System Analisys and Modelling; Joachim Fischer, Andreas Prinz, Markus Scheidgen, and Merete S. Tveit; Kaiserslautern 2006; Springer</li>
+<li><span class="label">workshop</span> Self-Organizing Information Systems for Disaster Management; Artin Avanes, Timo Mika Gläßer, and Markus Scheidgen; In 3. GI/ITG KuVS Fachgespräch Ortsbezogene Anwendungen und Dienste, Berlin 2006</li>
+<li><span class="label">workshop</span> <a href="http://www2.informatik.hu-berlin.de/%7Escheidge/downloads/MBD06ScheidgenModelPattern.pdf">Model Pattern for Model Transformations in Model Driven Development</a>; 4th MBD and 3th MOMPES Workshop; Potsdam 2006; IEEE</li>
+<li><span class="label">workshop</span> <a href="http://www2.informatik.hu-berlin.de/%7Escheidge/downloads/MBD06ScheidgenCMOFImplementation.pdf">CMOF-Model Semantics and Language Mapping for MOF 2.0 Implementations</a>; 4th MBD and 3th MOMPES Workshop; Potsdam 2006; IEEE</li>
+<li><span class="label" style="background-color: black;">conference</span> <a href="http://www2.informatik.hu-berlin.de/%7Escheidge/downloads/SDL05.pdf">ULF-Ware – An Open Framework for Integrated Tools for ITU-T Languages</a>; 12th SDL Forum 2005; J. Fischer, A. Kunert, M. Piefel, M. Scheidgen; Grimstad, June 2005; Springer</li>
+<li><span class="label">workshop</span> <a href="http://www2.informatik.hu-berlin.de/%7Escheidge/downloads/WITUL.pdf">Toolbased Language Development</a>; WITUL; Fischer, J.; Holz, E.; Prinz, A.; Scheidgen, M.; Rennes, November 2004; Elsevier</li>
+<li><span class="label">workshop</span> <a href="http://www2.informatik.hu-berlin.de/%7Escheidge/downloads/Sam04.pdf">A Metamodel for SDL-2000 in the Context of Metamodeling ULF</a>; 4th SDL and MSC Workshop, J. Fischer, M. Piefel, M. Scheidgen; Ottawa, July 2004; Springer</li>
+</ul>
+<h3>Technical reports</h5>
+<ul>
+<li><a title="How big are models" href="http://hwl.hu-berlin.de/fileadmin/user_upload/documents/howbig_techreport.pdf">How Big Are Models</a>; technical report; 2012</li>
+<li><a href="http://www2.informatik.hu-berlin.de/%7Escheidge/downloads/eichler-scheidgen-soden.pdf">A Meta-Modelling Framework for Modelling Semantics in the Context of Existing Domain Platforms</a>; Hajo Eichler, Markus Scheidgen, and Michael Soden; 2006</li>
+<li><a href="http://www2.informatik.hu-berlin.de/%7Escheidge/downloads/OnMof2.pdf">On Implementing MOF 2.0: New Features for Modelling Abstractions</a>; technical report, July 2005</li>
+</ul>
+<h3>Review/chair activities</h3>
+<ul>
+<li>17th International Conference on System Design Languages: SDL Forum 2015, Chair</li>
+<li>BigMDE Workshop at STAF, 2013-2015, PC</li>
+<li>Modevva Workshop at Models, 2012-2015, PC</li>
+<li>EXE Workshop at Models, 2015, PC</li>
+<li>DSML Workshop at Modellierung, 2008, Chair</li>
+<li>International Journal on Software and Systems Modeling, Springer, Reviewer</li>
+</ul>
+<h3>Awards</h3>
+<ul>
+<li>DFG schoolarship as part of the Graduiertenkollegs METRIK at the Humboldt-Universität zu Berlin, April 2006</li>
+<li>schoolarship granted by the city Berlin following the Nachwuchsförderungsgesetzt (NaFöG) in 2005 and 2006</li>
+<li>Institutspreis of the Instituts für Informatik (HU Berlin) awarded for the best master thesis, Juli 2004</li>
+</ul>
+<h3>Theses</h3>
+<ul>
+<li><span class="label" style="background-color: black;">doctoral thesis</span> <a href="http://www2.informatik.hu-berlin.de/%7Escheidge/downloads/thesis.pdf">Description of Computer Languages Based on Object-Oriented Meta-Modelling</a>, October 2008</li>
+<li><span class="label" style="background-color: blue;">diploma thesis</span> <a href="http://www2.informatik.hu-berlin.de/%7Escheidge/downloads/da.pdf">Metamodelle für Sprachen mit formaler Syntaxdefinition, am Beispiel von SDL-2000</a>, July 2004</li>
+<li><span class="label" style="background-color: grey;">Studienarbeit</span> <a href="http://www2.informatik.hu-berlin.de/%7Escheidge/downloads/kc2kc++_twoSided.pdf">Automatische Konvertierung von Kimwitu nach kinwitu++</a>, April 2003</li>
+</ul>
+            </div>
+          </div>
+        </div>
       </div>
+      <h2>Experience</h2>
       <div class="columns">
         <div class="column">
-          <h2>Skills</h2>
+          <h3>Skills</h3>
+          <img src="img/words.png" width="100%">
+        </div>
+        <div class="column cv">
+          <h3>Brief CV</h3>
+          <ul>
+            <li>since 2011 post-doc at Humboldt-Universität zu Berlin</li>
+            <li>2009 until 2010 consultant for the adesso AG</li>
+            <li>Spring 2007 visiting researcher at Adger University, Norway</li>
+            <li>2005—2009 PhD student at the Humboldt-Universität zu Berlin</li>
+            <li>Fall 2003 research internship at the NEC Research Laboratories, New Jersey</li>
+            <li>November 2002—June 2003 software developer at the DResearch GmbH, development of telecommunication protocol handlers for the Siemens AG</li>
+            <li>August 1999—November 2001 software developer for the Infopark AG</li>
+            <li>since fall 1998 student of computer science at the Humboldt-Universität zu Berlin</li>
+          </ul>
         </div>
         <div class="column">
-          <h2>I worked for</h2>
+          <h3>I worked for</h3>
+          <img src="img/employer.png" width="90%">
         </div>
       </div>
     </div>
