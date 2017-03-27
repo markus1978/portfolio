@@ -1,7 +1,8 @@
 // Override variables here
 // You can add new ones or update existing ones:
 
-$highlight: #CC0000;
+$red: #ff3860;
+$highlight: $red;
 $family-serif: "Proxima Nova", "Helvetica Neue", "Helvetica", sans-serif; // Add a serif family
 
 // Override generated variables here
@@ -58,18 +59,9 @@ h3 {
   margin-left: 5px;
 }
 
-.header {
-  padding-top: 0px !important;
-  text-align: left;
-  color: white;
+.banner {
   background:
-     linear-gradient(
-       rgba(0, 0, 0, 0.5),
-       rgba(0, 0, 0, 0.5)
-     ),
-     url(../img/header-background.jpg)
      top center
-     fixed
      $grey;
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -81,6 +73,70 @@ h3 {
   }
   @media (min-width: $breakpoint-pad) {
     padding-bottom: 48px;
+  }
+}
+
+.header {
+  padding-top: 0px !important;
+  text-align: left;
+  background-image: url(../img/header-background.jpg);
+  color: $red;
+  h1 { color: white; }
+}
+
+.software-projects, .research {
+  h1 {
+    color: white;
+    @media (max-width: $breakpoint-pad) {
+      font-size: 24pt;
+    }
+    @media (max-width: $breakpoint-phone) {
+      font-size: 18pt;
+    }
+    @media (min-width: $breakpoint-pad) {
+      font-size: 32pt;
+    }
+  }
+  @media (max-width: $breakpoint-pad) {
+    padding-top: 80px !important;
+    font-size: 16pt;
+    min-height: 300px;
+  }
+  @media (max-width: $breakpoint-phone) {
+    padding-top: 40px !important;
+    font-size: 14pt;
+    min-height: 200px;
+  }
+  @media (min-width: $breakpoint-pad) {
+    padding-top: 150px !important;
+    min-height: 400px;
+    font-size: 18pt;
+  }
+  font-weight: bold;
+  color: $red;
+}
+
+.software-projects {
+    text-align: left;
+    background-image: url(../img/software-projects-banner.jpg);
+}
+
+.research {
+  text-align: right;
+  background-image: url(../img/research-banner.jpg);
+}
+
+.footer {
+  background-color: #111;
+  p {
+    color: white !important;
+  }
+  a {
+    font-weight: bold;
+    color : white;
+  }
+  a:hover {
+    color: $red;
   }
 }
 
@@ -116,11 +172,16 @@ h3 {
 }
 
 .nav-left a.nav-item:not(:hover), .header a:not(.nav-item) {
-  color: white;
+  font-weight: bold;
+  color: $red;
+}
+
+a.nav-item:hover {
+  color: white !important;
 }
 
 .nav-toggle:not(:hover) span {
-  background-color: white;
+  background-color: $red;
 }
 
 .nav-toggle:hover {
@@ -128,15 +189,16 @@ h3 {
 }
 
 #nav-toggle-state:not(:checked) ~ .nav-menu a.nav-item:not(:hover) {
-  color: white;
+  color: $red;
 }
 
 #nav-toggle-state:checked ~ .nav-menu {
   display: block;
-  color: black;
+  color: white;
 }
 
 .header a:not(.fa) {
+  font-weight: bold;
   text-transform: uppercase;
   @media (max-width: $breakpoint-pad) {
     font-size: 10pt !important;
@@ -150,7 +212,7 @@ h3 {
 }
 
 .header .buttons a {
-  border: 1px solid #fff !important;
+  border: 1px solid $red !important;
   @media (max-width: $breakpoint-pad) {
     padding: 6px;
   }
@@ -160,8 +222,8 @@ h3 {
 }
 
 .header .buttons .inverted, .header .buttons a:hover {
-  color: black;
-  background-color: white;
+  color: white;
+  background-color: $red;
 }
 
 .header h1, .header h2 {
@@ -238,6 +300,7 @@ p .fa-file {
     width: 100%;
     height: 0;
     padding-bottom: 56.25%;
+    margin-bottom: 12px;
 }
 .video {
     position: absolute;
@@ -246,6 +309,7 @@ p .fa-file {
     width: 100%;
     height: 100%;
 }
+
 
 .pubs {
     display: none;
