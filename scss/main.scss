@@ -63,16 +63,18 @@ h3 {
   background:
      top center
      $grey;
-  background-size: 100% auto;
   background-repeat: no-repeat;
   @media (max-width: $breakpoint-pad) {
     padding-bottom: 30px;
+    background-size: 110% auto;
   }
   @media (max-width: $breakpoint-phone) {
     padding-bottom: 20px;
+    background-size: 140% auto;
   }
   @media (min-width: $breakpoint-pad) {
     padding-bottom: 48px;
+    background-size: 100% auto;
   }
 }
 
@@ -112,8 +114,12 @@ h3 {
     min-height: 400px;
     font-size: 18pt;
   }
+  line-height: normal;
   font-weight: bold;
   color: $red;
+  li {
+    margin-bottom: 6px;
+  }
 }
 
 .software-projects {
@@ -128,6 +134,7 @@ h3 {
 
 .footer {
   background-color: #111;
+  padding-bottom: 6em;
   p {
     color: white !important;
   }

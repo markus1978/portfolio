@@ -33,6 +33,26 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
+
+  <!-- cookieconsent -->
+  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+  <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+  <script>
+  window.addEventListener("load", function(){
+  window.cookieconsent.initialise({
+    "palette": {
+      "popup": {
+        "background": "#111111",
+        "text": "#ffffff"
+      },
+      "button": {
+        "background": "#ff3860",
+        "text": "#fff"
+      }
+    }
+  })});
+  </script>
+  <!-- end of cookieconsent -->
 </head>
 
 <body>
@@ -69,10 +89,10 @@
     <div>
       <nav class="nav">
         <div class="nav-left">
-          <a class="fa fa-github fa-lg nav-item" href="#"></a>
-          <a class="fa fa-linkedin  fa-lg  nav-item" href="#"></a>
-          <a class="fa fa-xing  fa-lg  nav-item" href="#"></a>
-          <a class="fa fa-twitter  fa-lg  nav-item" href="#"></a>
+          <a class="fa fa-github fa-lg nav-item" href="https://github.com/markus1978"></a>
+          <a class="fa fa-linkedin  fa-lg  nav-item" href="https://www.linkedin.com/in/markus-scheidgen-6b03876/"></a>
+          <a class="fa fa-xing  fa-lg  nav-item" href="https://www.xing.com/profile/Markus_Scheidgen?sc_o=mxb_p"></a>
+          <a class="fa fa-twitter  fa-lg  nav-item" href="https://twitter.com/mscheidgen"></a>
         </div>
 
         <div class="nav-center">
@@ -87,24 +107,24 @@
         <input type="checkbox" id="nav-toggle-state" />
 
         <div class="nav-right nav-menu">
-          <a class="nav-item" href="#">Software</a>
-          <a class="nav-item" href="#">Research</a>
-          <a class="nav-item" href="#">Experience</a>
-          <a class="nav-item" href="#">Contact</a>
+          <a class="nav-item" href="#Software">Software</a>
+          <a class="nav-item" href="#Research">Research</a>
+          <a class="nav-item" href="#Experience">Experience</a>
+          <a class="nav-item" href="http://www.markus-scheidgen.de/sample-page-2/">Blog</a>
         </div>
       </nav>
       <div class="container">
          <h1>Markus Scheidgen</h1>
          <h2>Software Developer, Researcher</h2>
          <div class="buttons">
-           <a class="inverted">contact</a>
-           <a>printable CV</a>
+           <a class="inverted" href="mailto:markus.scheidgen@gmail.com" title="email">contact</a>
+           <a href="#" title="printable CV">printable CV</a>
          </div>
       </div>
     </div>
   </section>
 
-  <section class="section">
+  <section class="section" id="Software">
     <div class="container">
       <h2>Recent Software</h2>
       <div class="columns">
@@ -133,9 +153,9 @@
         <div class="column">
           <h3>
             XRAW
-            <a class="dot fa fa-github"></a>
-            <a class="dot fa fa-file-o"></a>
-            <a class="dot fa fa-slideshare"></a>
+            <a class="dot fa fa-github" title="XRAW on GitHub" href="http://github.com/markus1978/xraw"></a>
+            <a class="dot fa fa-file-o" title="XRAW research paper" href="http://www.markus-scheidgen.de/wp-content/uploads/2016/12/ScheidgenEfftingeMarticke_cameraready.pdf"</a>
+            <a class="dot fa fa-slideshare" title="XRAW presentation" href="http://www.slideshare.net/markus_scheidgen/metamodeling-vs-metaprogramming-a-case-study-on-developing-client-libraries-for-rest-apis"></a>
           </h3>
           <p>
             XRAW is a programming framework that allows to use any existing
@@ -200,7 +220,7 @@
       </ul>
     </div>
   </section>
-  <section class="section">
+  <section class="section" id="Research">
     <div class="container">
       <h2>Research Projects</h2>
       <div class="columns">
@@ -294,7 +314,7 @@
           <div class="columns">
             <div class="column">
 <ul>
-<li><span class="label" style="background-color: black;">conference</span> <a href="http://www.markus-scheidgen.de/wp-content/uploads/2017/03/SrcRepo-MODELSWARD.pdf">Creating and Analyzing Source Code Repository Models – A Model-based Approach to Mining Software Repositories</a>; Markus Scheidgen, Joachim Fischer, Martin Schmidt; Proceedings of the 5th International Conference on Model-Driven Engineering and Software Development, <a href="http://www.modelsward.org/?y=2017" target="_blank">MODELSWARD 2017</a>, Porto, Portugal, Feb 19-21, 2017 (<a title="Model-Based Mining of Source Code Repositories" href="http://www.markus-scheidgen.de/2017/03/creating-and-analyzing-source-code-repository-models-a-model-based-approach-to-mining-software-repositories/">BibTex/details</a>)</li>
+<li><span class="label" style="background-color: black;">conference</span> <a href="http://www.markus-scheidgen.de/wp-content/uploads/2017/03/ScheidgenModelsward2017-cr.pdf">Creating and Analyzing Source Code Repository Models – A Model-based Approach to Mining Software Repositories</a>; Markus Scheidgen, Joachim Fischer, Martin Schmidt; Proceedings of the 5th International Conference on Model-Driven Engineering and Software Development, <a href="http://www.modelsward.org/?y=2017" target="_blank">MODELSWARD 2017</a>, Porto, Portugal, Feb 19-21, 2017 (<a title="Model-Based Mining of Source Code Repositories" href="http://www.markus-scheidgen.de/2017/03/creating-and-analyzing-source-code-repository-models-a-model-based-approach-to-mining-software-repositories/">BibTex/details</a>)</li>
 <li><span class="label" style="background-color: black;">conference</span> <a href="http://www.markus-scheidgen.de/wp-content/uploads/2016/12/ScheidgenEfftingeMarticke_cameraready.pdf">Metamodeling vs Metaprogramming: A Case Study on Developing Client Libraries for REST APIs</a>; Markus Scheidgen, Sven Efftinge, Frederik Marticke; 12th European Conference, <a href="http://link.springer.com/book/10.1007/978-3-319-42061-5" target="_blank">ECMFA 2016</a>, Held as Part of STAF 2016, Vienna, Austria, July 6-7, 2016; Springer LNCS (<a title="Model-Based Mining of Source Code Repositories" href="http://www.markus-scheidgen.de/2016/12/metamodeling-vs-metaprogramming-a-case-study-on-developing-client-libraries-for-rest-apis/">BibTex/details</a>)</li>
 <li><span class="label">workshop</span> <a href="http://www.markus-scheidgen.de/wp-content/uploads/2016/12/ScheidgenCompression_cameraReady.pdf">Evaluation of Model Comparison for Delta-Compression in Model Persistence</a>; Markus Scheidgen; Workshop paper at <a href="http://www.big-mde.eu/" target="_blank">BigMDE 2016</a> (at <a href="http://staf2016.conf.tuwien.ac.at/" target="_blank">STAF 2016</a>),Vienna, Austria, July 6-7, 2016; CEUR (<a title="Generation of Random Software Models for Benchmarks" href="http://www.markus-scheidgen.de/2016/12/evaluation-of-model-comparison-for-delta-compression-in-model-persistence/">BibTex/details</a>)</li>
 <li><span class="label" style="background-color: black;">conference</span> Exchanging the Target-Language in Existing, Non-Metamodel-Based Compilers; Dorian Weber, Markus Scheidgen, Joachim Fischer; 9th International Conference, <a href="http://www.springer.com/de/book/9783319466125" target="_blank">SAM 2016</a>, Saint-Malo, France, October 3-4, 2016. Proceedings; Springer LNCS (<a title="Model-Based Mining of Source Code Repositories" href="http://dblp.uni-trier.de/rec/bibtex/conf/sam/WeberSF16" target="_blank">BibTex/details</a>)</li>
@@ -377,7 +397,7 @@
       </ul>
     </div>
   </section>
-  <section class="section">
+  <section class="section" id="Experience">
     <div class="container">
       <h2>Experience</h2>
       <div class="columns">
@@ -409,15 +429,16 @@
   <div class="container">
     <div class="content has-text-centered">
       <p>
-        <a class="fa fa-github fa-lg nav-item" href="#"></a>
-        <a class="fa fa-linkedin  fa-lg  nav-item" href="#"></a>
-        <a class="fa fa-xing  fa-lg  nav-item" href="#"></a>
-        <a class="fa fa-twitter  fa-lg  nav-item" href="#"></a>
-        <a class="fa fa-envelope  fa-lg  nav-item" href="#"></a>
+        <a class="fa fa-github fa-lg nav-item" href="https://github.com/markus1978"></a>
+        <a class="fa fa-linkedin  fa-lg  nav-item" href="https://www.linkedin.com/in/markus-scheidgen-6b03876/"></a>
+        <a class="fa fa-xing  fa-lg  nav-item" href="https://www.xing.com/profile/Markus_Scheidgen?sc_o=mxb_p"></a>
+        <a class="fa fa-twitter  fa-lg  nav-item" href="https://twitter.com/mscheidgen"></a>
+        <a class="fa fa-envelope  fa-lg  nav-item" href="mailto:markus.scheidgen@gmail.com"></a>
       </p>
       <p>
         Powered by <a href="http://bulma.io" title="bulma">Bulma</a>.
         Source code for this site availabe at <a href="http://github.com/markus1978/portfolio">GitHub.</a>
+        This site uses cookies; learn more <a href="/cookies/" title="cookie information">here</a>.
       </p>
       <p>&copy; 2017 Markus Scheidgen, all rights reserved.</p>
     </div>
