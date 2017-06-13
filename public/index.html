@@ -225,91 +225,116 @@
       <h2>Research Projects</h2>
       <div class="columns">
         <div class="column">
-          <h3>
-            Large Software Models
-          </h3>
-          <p>
-            Increasingly complex software systems, require increasingly complext software models.
-            Large models are traditianlly managed with SQL database persistent layers.
-            However, SQL databases do not scale enough or are otherwiese indadequate due
-            to the graph-like nature of software models in certain application contexts.</p><p>
-            EMF-Fragments [
-            <a href="https://github.com/markus1978/emf-fragments" title="EMF-Fragments on GitHub" target="new" class="fa fa-github"></a>
-            <a href="http://www.markus-scheidgen.de/wp-content/uploads/2012/07/Automated-and-Transparent-Model-Fragmentation-for-Persisting-Large-Models.pdf" title="EMF-Fragments paper" target="new" class="fa fa-file"></a>
-            <a href="https://de.slideshare.net/markus_scheidgen/reference-representation-in-large-metamodelbased-datasets?qid=c82cca72-a74f-46ee-bbc0-aa8823efafde&v=&b=&from_search=7" title="EMF-Fragments presentation" target="new" class="fa fa-slideshare"></a>
-            ] is a NoSQL persistent layer for EMF models. With EMF-Fragments, I
-            explored the scalebility properties of a fragmentation-based persistence that
-            facilitates the nature of document databases like mongoDB.
-          </p>
-          <p>
-            On application for these large software models is model-based mininig of source
-            code repositories. SrcRepo [
-            <a href="https://github.com/markus1978/srcrepo" title="SrcRepo on GitHub" target="new" class="fa fa-github"></a>
-            <a href="http://www.markus-scheidgen.de/wp-content/uploads/2017/03/SrcRepo-MODELSWARD.pdf" title="SrcRepo paper" target="new" class="fa fa-file"></a>
-            <a href="https://de.slideshare.net/markus_scheidgen/2014-0930-sam?qid=7dbdc57d-33f2-40fd-baed-3dbaccef1fba&v=&b=&from_search=1" title="SourceRepo presentation" target="new" class="fa fa-slideshare"></a>
-            ] uses reverse engineering to create large abstract syntax trees models of whole
-            source code repositories comprising all branches and revisions of code.
-          </p>
-          <p class="figure">
-            <img src="img/srcrepo.png">
-          </p>
-          <p class="uses">Eclipse, EMF, Reverse Engineering, Java, Metrics, Data Mining, Statistics, MongoDB, NoSQL, Git</p>
-        </div>
-        <div class="column">
-          <h3>
-            Sensor Networks
-          </h3>
-          <p>
-            To understand the possibilities of <b>wireless sensor networks</b> for
-            <b>smart cities</b>, we created and experimented with the
-            <a href="http://hwl.informatik.hu-berlin.de" title="Humboldt Wireless Lab" target="new">HWL</a>,
-            a heteregenous 300 node wireless mesh network equipped with seismic
-            sensors on the Humboldt University research campus in Berlin.
-          </p>
-          <p class="figure">
-            <img src="img/wsn.jpg">
-          </p>
-          <p>
-            To manage the network, configure its software components, and process
-            the large ammounts of different data, I developed the clickwatch
-            framework. Clickwatch
-            [<a href="http://github.com/markus1978/clickwatch" title="Clickwatch at GitHub" target="new" class="fa fa-github"></a>&nbsp;
-            <a href="https://www.researchgate.net/profile/Robert_Sombrutzki/publication/242019293_ClickWatch_-_An_experimentation_framework_for_communication_network_test-beds/links/5422859a0cf26120b7a04389.pdf" target="new" title="Clickwatch paper" class="fa fa-file"></a>&nbsp;
-            <a href="https://de.slideshare.net/markus_scheidgen/2012-0614-inss?qid=e146981b-742c-44ed-838f-9dce61731c8f&v=&b=&from_search=1" title="Clickwatch presentation" target="new" class="fa fa-slideshare"></a>]
-            represents data, configurations, and changes
-            in an <a href="http://read.cs.ucla.edu/click/click" title="MIT Click framework">MIT Click</a>-driven
-            network in a singlular visual model; allows to manage, persist, and analyse this data.
-          </p>
-          <p class="uses">Eclipse, EMF, XML, Statistics, MongoDB, NoSQL, WIFI, Networks, Click</p>
-        </div>
-        <div class="column">
-          <h3>
-            DSLs
-          </h3>
-          <p>
-            In contrast to general purpose computer languages, domain specific languages (DSL) are tailored
-            for a specific application domain. While limited in scope, they adhere
-            to the specific conventions and vocabulary of a specific domain and therefore allow
-            for more precise, more readable, and more accessible expression. Often
-            DSLs aspire to allow domain experts that have only a limited software engineering background to make
-            meaningful contributions.
-          </p>
-          <p>
-            The Textual Editing Framework (TEF) [
-            <a href="https://github.com/markus1978/tef" title="TEF on GitHub" target="new" class="fa fa-github"></a>
-            <a href="http://www2.informatik.hu-berlin.de/~scheidge/downloads/ECMDA08.pdf" title="TEF paper" target="new" class="fa fa-file"></a>
-            ] is my contribution to the rich DSL ecosystem. In contrast to similar
-            frameworks like Xtext, TEF allows for dynamic syntaxes that can change within
-            a running IDE and intergates particularely well with other types of editors.
-          </p>
-          <div class="youtube-container">
-            <iframe class="video" src="https://www.youtube.com/embed/5MZT2a3--Ko" frameborder="0" allowfullscreen></iframe>
+          <div>
+            <h3>
+              Large Software Models
+            </h3>
+            <p>
+              Increasingly complex software systems, require increasingly complext software models.
+              Large models are traditianlly managed with SQL database persistent layers.
+              However, SQL databases do not scale enough or are otherwiese indadequate due
+              to the graph-like nature of software models in certain application contexts.</p><p>
+              EMF-Fragments [
+              <a href="https://github.com/markus1978/emf-fragments" title="EMF-Fragments on GitHub" target="new" class="fa fa-github"></a>
+              <a href="http://www.markus-scheidgen.de/wp-content/uploads/2012/07/Automated-and-Transparent-Model-Fragmentation-for-Persisting-Large-Models.pdf" title="EMF-Fragments paper" target="new" class="fa fa-file"></a>
+              <a href="https://de.slideshare.net/markus_scheidgen/reference-representation-in-large-metamodelbased-datasets?qid=c82cca72-a74f-46ee-bbc0-aa8823efafde&v=&b=&from_search=7" title="EMF-Fragments presentation" target="new" class="fa fa-slideshare"></a>
+              ] is a NoSQL persistent layer for EMF models. With EMF-Fragments, I
+              explored the scalebility properties of a fragmentation-based persistence that
+              facilitates the nature of document databases like mongoDB.
+            </p>
+            <p class="uses">Eclipse, EMF, Java, MongoDB, NoSQL</p>
           </div>
-          <p class="uses">Eclipse, EMF, Xtext, GMF, Domain Modeling</p>
+          <div style="margin-top: 20px">
+            <h3>
+              Mining Source Code Repositories
+            </h3>
+            <p>
+              On application for these large software models is model-based mininig of source
+              code repositories. SrcRepo [
+              <a href="https://github.com/markus1978/srcrepo" title="SrcRepo on GitHub" target="new" class="fa fa-github"></a>
+              <a href="http://www.markus-scheidgen.de/wp-content/uploads/2017/03/SrcRepo-MODELSWARD.pdf" title="SrcRepo paper" target="new" class="fa fa-file"></a>
+              <a href="https://de.slideshare.net/markus_scheidgen/2014-0930-sam?qid=7dbdc57d-33f2-40fd-baed-3dbaccef1fba&v=&b=&from_search=1" title="SourceRepo presentation" target="new" class="fa fa-slideshare"></a>
+              ] uses reverse engineering to create large abstract syntax trees models of whole
+              source code repositories comprising all branches and revisions of code.
+            </p>
+            <p class="figure">
+              <img src="img/srcrepo.png">
+            </p>
+            <p class="uses">Reverse Engineering, Java, Metrics, Data Mining, Statistics, Git</p>
+          </div>
+        </div>
+        <div class="column">
+          <h3>
+            Interactive Visual Analysis
+          </h3>
+          <p>
+            To explore big data more intuively visual analytics uses
+            interactive visualizations that allow uses to unserstand the relationships
+            within complex data-sets based on visual connections between
+            different data representations.
+          </p>
+          <p>
+            I build a web-based data visualization framework on top of <a href="https://angular.io/" title="Angular2">Angular2</a>
+            and <a href="http://d3.js" title="d3.js">d3.js</a> called
+            d3ng
+            [<a href="http://github.com/markus1978/d3ng" title="d3ng at GitHub" target="new" class="fa fa-github"></a>&nbsp;
+            <a href="https://www.slideshare.net/markus_scheidgen/interactive-visualization-of-software" title="d3ng presentation" target="new" class="fa fa-slideshare"></a>].
+            With D3ng clients can create complex visualizations
+            from normal charts that show relationships via brushing and linking.
+            Selections in one chart influence the representation of the selected
+            data-points in other charts and connections are visualized via colors.
+          </p>
+          <p>
+            Try for yourself:
+          </p>
+          <p class="figure">
+            <a href="http://d3ng.github.io/owid" title="Our World in Data with d3ng"><img src="img/owid.png"></a>
+          </p>
+          <p class="uses">Angular2, node.js, D3.js, TypeScript</p>
+        </div>
+        <div class="column">
+          <div>
+            <h3>
+              DSLs
+            </h3>
+            <p>
+              Domain specific languages (DSL) are computer languages that adhere
+              to the specific conventions and vocabulary of a specific domain and therefore allow
+              for more precise, more readable, and more accessible expression.
+              <!--Often
+              DSLs aspire to allow domain experts that have only a limited software engineering background to make
+              meaningful contributions.-->
+              I created the Textual Editing Framework (TEF) [
+              <a href="https://github.com/markus1978/tef" title="TEF on GitHub" target="new" class="fa fa-github"></a>
+              <a href="http://www2.informatik.hu-berlin.de/~scheidge/downloads/ECMDA08.pdf" title="TEF paper" target="new" class="fa fa-file"></a>
+              ] for dynamic languages that can extend and change their syntax in a running IDE.
+            </p>
+            <div class="youtube-container">
+              <iframe class="video" src="https://www.youtube.com/embed/5MZT2a3--Ko" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <p class="uses">Eclipse, EMF, Xtext, GMF, Domain Modeling</p>
+          </div>
+          <div style="margin-top: 20px">
+            <h3>
+              Sensor Networks
+            </h3>
+            <p>
+              To research <b>wireless sensor network</b> applications for <b>smart cities</b>,
+              we build the 300 sensor network <a href="http://hwl.informatik.hu-berlin.de" title="Humboldt Wireless Lab" target="new">HWL</a>,
+              and I created the model-based sensor network experimentation framework Clickwatch
+              [<a href="http://github.com/markus1978/clickwatch" title="Clickwatch at GitHub" target="new" class="fa fa-github"></a>&nbsp;
+              <a href="https://www.researchgate.net/profile/Robert_Sombrutzki/publication/242019293_ClickWatch_-_An_experimentation_framework_for_communication_network_test-beds/links/5422859a0cf26120b7a04389.pdf" target="new" title="Clickwatch paper" class="fa fa-file"></a>&nbsp;
+              <a href="https://de.slideshare.net/markus_scheidgen/2012-0614-inss?qid=e146981b-742c-44ed-838f-9dce61731c8f&v=&b=&from_search=1" title="Clickwatch presentation" target="new" class="fa fa-slideshare"></a>] to experiment with it.
+            </p>
+            <p class="figure">
+              <img src="img/wsn.jpg">
+            </p>
+            <p class="uses">Eclipse, EMF, XML, Statistics, MongoDB, NoSQL, WIFI, Networks, Click</p>
+          </div>
         </div>
       </div>
       <div>
-        <h3><a onclick="toggle_visibility('pubs', 'pubs-toggle');" id="pubs-toggle" class="toggle fa fa-caret-right"></a>Publications</h3>
+        <h3 onclick="toggle_visibility('pubs', 'pubs-toggle');" style="cursor: pointer;"><a id="pubs-toggle" class="toggle fa fa-caret-right"></a>Publications</h3>
         <div id="pubs" class="pubs">
           <div class="columns">
             <div class="column">
@@ -394,6 +419,7 @@
         <li>Calculating metrics in 4-billion node graphs</li>
         <li>Persistence of reverse engineered models in MongoDB</li>
         <li>All revisions of all Eclipse's Git repostories in one model</li>
+        <li>Interactive visualizations with d3.js and Angular2</li>
       </ul>
     </div>
   </section>
