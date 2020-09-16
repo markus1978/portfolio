@@ -21,10 +21,22 @@ a {
   color: $highlight;
 }
 
+a.anchor {
+  display: block;
+  position: relative;
+  top: -250px;
+  visibility: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-style: normal;
   font-variant: normal;
   font-size: 12pt;
+  padding-top: 250px;
 }
 
 h1 {
@@ -44,8 +56,8 @@ h2 {
 h3 {
   font-weight: bold;
   font-size: 14pt;
-  margin-top: 0pt;
-  margin-bottom: 9pt;
+  margin-top: 24pt;
+  margin-bottom: 12pt;
 }
 
 .dot {
@@ -79,6 +91,9 @@ h3 {
 }
 
 .header {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
   padding-top: 0px !important;
   text-align: left;
   background-image: url(../img/header-background.jpg);
@@ -277,6 +292,8 @@ a.nav-item:hover {
 }
 
 .figure {
+  padding-top: 24px;
+  padding-bottom: 24px;
   text-align: center;
 }
 
