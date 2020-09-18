@@ -9,50 +9,14 @@
   <meta name="description" content="Markus Scheidgen, Software Devloper, Researcher">
   <meta name="author" content="Markus Scheidgen">
 
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
-
-  <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/manifest.json">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
-
-  <!-- cookieconsent -->
-  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
-  <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
-  <script>
-  window.addEventListener("load", function(){
-  window.cookieconsent.initialise({
-    "palette": {
-      "popup": {
-        "background": "#111111",
-        "text": "#ffffff"
-      },
-      "button": {
-        "background": "#ff3860",
-        "text": "#fff"
-      }
-    }
-  })});
-  </script>
-  <!-- end of cookieconsent -->
 </head>
 
 <body>
@@ -83,8 +47,8 @@
         te.className = "toggle fa fa-caret-down";
       }
     }
-
   </script>
+
   <section class="section header banner">
     <div>
       <nav class="nav">
@@ -126,15 +90,16 @@
   <section class="section">
     <a class="anchor" id="Software"></a>
     <div class="container">
-      <h2>NOMAD &ndash; developing a scientific data sharing platform (2018 &ndash; now)</h2>
+      <h2>NOMAD &ndash; leading the development of a scientific data sharing platform (2018 &ndash; now)</h2>
       <p>
-        I joined the NOMAD project in 2018 when it's many partners had already developed
-        isolated services based on incompatible technology stacks. I soon
-        assumed the role of an architect and lead developer, clearing out technical
-        dept, and consolidating everything into a uniform software solution based on
-        modern web technologies. As a single computer scientist among many physics trained
-        colleagues, I introduced rigour engineering practices and enabled my peers to
-        concentrate on the science.
+        I joined the NOMAD project in 2018. At this point it's many project partners had already
+        created a isolated services based on incompatible technology stacks. In my
+        role as architect and lead developer, I had to remove a lot of technical
+        dept, introduce rigor engineering practices, and consolidate everything into a
+        uniform sustainable software solution based on modern web technologies.
+        As a single experienced software developer among many scientists, I learned to
+        effectively communicate complex technical issues across domain language barriers
+        and tutored non computer scientist to become better developers.
       </p>
       <div class="columns">
         <div class="column">
@@ -144,17 +109,18 @@
           </p>
           <div>
             The NOMAD UI is the portal to the worlds largest materials science database.
-            Interactive visualization components and a powerful
-            autocomplete search bar allow to facet search through million of entries fast.
+            Interactive visualizations and a powerful autocomplete search bar allow to
+            efficiently filter million of entries based on complex facets of heterogenous
+            metadata.
           </div>
           <p class="figure">
             <a href="https://nomad-lab.eu/prod/rae/beta/gui/entry/id/f0KQE2aiSz2KRE47QtoZtw/UKmX8Jkps5EUB1Vc4pudwTVZJDtB/archive/section_run/section_system:2/lattice_vectors" target="new"><img width="100%" src="img/nomad-archive.png"></a>
           </p>
           <div>
-            With NOMAD researches browse through complex structures of heterogeneous
-            data that was produced by many different material science simulation tools.
-            It complex metainfo system allows to visualize and represent data consistently
-            in domain specific scientific representations.
+            NOMAD's complex metainfo system that describes a complex data structure
+            comprising thousands of different properties allows this frontend
+            to visualize and consistently represent data acquired from different
+            40 different databases, data formats, and material science simulation tools.
           </div>
           <p class="uses">Javascript, React, Recoil, Material-UI, D3</p>
         </div>
@@ -164,10 +130,11 @@
             In NOMAD we combined a parallel filesystem with mongoDB and Elasticsearch
             to provide instant access to billions of different data points processed from
             50TB of raw data from over 10 million material simulations. Processing
-            is run in distributed task queues and analysis data from over 40 different
-            simulation programs. A REST API allows researchers to automate their work and
-            drives the powerful SPA UI. All NOMAD services are using a SSO user management
-            solution.
+            runs in distributed task queues, parses over 40 different
+            formats, and runs comprehensive classifications and normalization steps.
+            The backends REST API allows researchers to automate their work and
+            drives the complex SPA frontend. All NOMAD services are using a customized
+            keycloak-based SSO user management.
           </div>
           <p class="figure">
             <a href="https://nomad-lab.eu/prod/rae/gui/about" target="new"><img src="img/nomad-arch.png"></a>
@@ -175,7 +142,7 @@
           <p class="uses">Python, REST, Flask, FastAPI, Elasticsearch, MongoDB, Keycloak, RabbitMQ/Celery, GPFS</p>
           <h3>Running in a cluster</h3>
           <p>With high and unpredictable workloads imposed by large amounts of data and complex
-            normalization of scientific data, we have to run NOMAD in a cluster with tools
+            classification and normalization of scientific data, we have to run NOMAD in a cluster with tools
             that allow to deploy and scale all components with ease. Deployment scripts based
             on docker-compose or helm allow us to easily setup and maintain NOMAD installations
             on Max Planck's HPC compute facility in Garching and at external sites alike.
@@ -199,7 +166,7 @@
         <li>Open Source development with an interdisciplinary international team</li>
         <li>SPA interface with interactive visualizations and faceted search</li>
         <li>Scalable backend with millions of database entries and distributed processing</li>
-        <li>Best practices, TDD, CI/CD, and Kubernetes and Helm based deployment</li>
+        <li>Best practices, TDD, CI/CD, and Kubernetes and Helm based deployments</li>
       </ul>
     </div>
   </section>
@@ -543,7 +510,7 @@
         Source code for this site availabe at <a href="http://github.com/markus1978/portfolio">GitHub.</a>
         This site uses cookies; learn more <a href="/cookies/" title="cookie information">here</a>.
       </p>
-      <p>&copy; 2017 Markus Scheidgen, all rights reserved.</p>
+      <p>&copy; 2020 Markus Scheidgen, all rights reserved.</p>
     </div>
   </div>
 </footer>
